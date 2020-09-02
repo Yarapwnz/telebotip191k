@@ -8,7 +8,7 @@ def start_message(message):
     use_markup.row('Оплата', 'Реквізити')
     use_markup.row('Розклад дзвінків', 'Розклад і особистий кабінет')
     use_markup.row('Дистанційне навчання', 'Відвідування')
-    use_markup.rpw('Пари')
+    use_markup.row('Пари')
     bot.send_message(message.from_user.id,'Хеллоу',reply_markup=use_markup)
 
 @bot.message_handler(content_types=['text'])
