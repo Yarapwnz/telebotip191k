@@ -28,5 +28,8 @@ def send_text(message):
     elif message.text == 'Реквізити':
             bot.send_message(
                 message.from_user.id, 'Перейди по посиланню - http://nung.edu.ua/department/іпо/реквізити-для-оплати')
+    elif message.text == 'Пари':
+        bot.send_message(
+            message.from_user.id, 'Аналіз до вимог програмного забезпечення - https://t.me/joinchat/DzFo_RiV3cO7AoJtuXvyUg \nІнтелектуальні системи аналізу даних - https://t.me/joinchat/HMyeslUPZgrp1kRPEa9aNg')
 
 bot.polling()
