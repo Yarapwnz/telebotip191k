@@ -8,7 +8,7 @@ def start_message(message):
     use_markup.row('Оплата', 'Реквізити')
     use_markup.row('Розклад дзвінків', 'Розклад і особистий кабінет')
     use_markup.row('Дистанційне навчання', 'Відвідування')
-    use_markup.row('Пари')
+    use_markup.row('Пари', 'Викладачі')
     bot.send_message(message.from_user.id,'Хеллоу',reply_markup=use_markup)
 
 @bot.message_handler(content_types=['text'])
@@ -27,10 +27,13 @@ def send_text(message):
         bot.send_message(
             message.from_user.id, 'Перейди по посиланню - https://docs.google.com/spreadsheets/d/1LH1-rZ72c4JiK2E-ZmlOC0IyxeeuDz_eqeWg3fRHDlM/edit?usp=sharing')
     elif message.text == 'Реквізити':
-            bot.send_message(
-                message.from_user.id, 'Перейди по посиланню - http://nung.edu.ua/department/іпо/реквізити-для-оплати')
+        bot.send_message(
+            message.from_user.id, 'Перейди по посиланню - http://nung.edu.ua/department/іпо/реквізити-для-оплати')
     elif message.text == 'Пари':
         bot.send_message(
             message.from_user.id, 'Аналіз до вимог програмного забезпечення - https://t.me/joinchat/DzFo_RiV3cO7AoJtuXvyUg \nІнтелектуальні системи аналізу даних - https://t.me/joinchat/HMyeslUPZgrp1kRPEa9aNg')
+    elif message.text == 'Викладачі':
+        bot.send_message(
+            message.from_user.id, 'Аналіз вимог до ПЗ - Храбатин Роман Ігорович - +380997003330 - r.khrabatyn@nung.edu.ua \nІнтелектуальні системи аналізу даних - Яцишин Микола Миколайович - +380 66 743 99 60 - yatsyshyn@gmail.com \nКПЗ - Шекета Василь Васильович - +380 97 337 64 02 - vasylsheketa@gmail.com \nЕмпіричні методи програмної інженерії - Незамай Борис Сергійович - +380 96 777 52 11 -\nПаралельне програмування - Тимків Дмитро Федорович - -\nМенеджмент проектів програмного забезпечення - Вовк Роман Богданович - Телеграм: @Vovk_R - r.vovk@nung.edu.ua ')
 
 bot.polling()
