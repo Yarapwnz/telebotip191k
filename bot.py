@@ -29,7 +29,7 @@ def send_text(message):
             message.from_user.id, 'Перейди по посиланню - http://nung.edu.ua/department/іпо/реквізити-для-оплати')
     elif message.text == 'Пари':
         bot.send_message(
-            message.from_user.id, 'Аналіз до вимог програмного забезпечення - https://t.me/joinchat/DzFo_RiV3cO7AoJtuXvyUg \nІнтелектуальні системи аналізу даних - https://t.me/joinchat/HMyeslUPZgrp1kRPEa9aNg')
+            message.from_user.id, 'Аналіз до вимог програмного забезпечення - https://t.me/joinchat/DzFo_RiV3cO7AoJtuXvyUg \nІнтелектуальні системи аналізу даних - https://t.me/joinchat/HMyeslUPZgrp1kRPEa9aNg \nПаралельне програмування - https://t.me/joinchat/GZaQJRusl4EpVi4PIGdy_g')
     elif message.text == 'Викладачі':
         bot.send_message(
             message.from_user.id, 'Аналіз вимог до ПЗ - Храбатин Роман Ігорович - +380997003330 - r.khrabatyn@nung.edu.ua \n\nІнтелектуальні системи аналізу даних - Яцишин Микола Миколайович - +380 66 743 99 60 - yatsyshyn@gmail.com \n\nКПЗ - Шекета Василь Іванович - +380 97 337 64 02 - vasylsheketa@gmail.com \n\nЕмпіричні методи програмної інженерії - Незамай Борис Сергійович - +380 96 777 52 11 -\n\nПаралельне програмування - Тимків Дмитро Федорович - 0993639490 -\n\nМенеджмент проектів програмного забезпечення - Вовк Роман Богданович - Телеграм: @Vovk_R - r.vovk@nung.edu.ua ')
